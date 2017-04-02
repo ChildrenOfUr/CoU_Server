@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+
+namespace CoU_Server.Models.Streets {
+	public class Street {
+		[Required]
+		[Key]
+		public int ID { get; set; }
+		
+		public string Items { get; set; }
+	}
+}
