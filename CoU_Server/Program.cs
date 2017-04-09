@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using CoU_Server.Models.Streets.MapData;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
 
@@ -14,6 +15,8 @@ namespace CoU_Server {
 				.Build();
 
 			host.Run();
+
+			MapData.Load();
 		}
 	}
 }
