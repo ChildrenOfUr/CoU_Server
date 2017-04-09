@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoU_Server.Models.Accounts;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 

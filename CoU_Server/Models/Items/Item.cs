@@ -39,7 +39,7 @@ namespace CoU_Server.Models.Items {
 				return true;
 			}
 
-			if (itemType != null && string.IsNullOrEmpty(itemType) {
+			if (itemType != null && string.IsNullOrEmpty(itemType)) {
 				// Bags except empty item types (this is an empty slot)
 				return true;
 			}

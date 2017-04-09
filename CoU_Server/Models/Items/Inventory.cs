@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using CoU_Server.Models.Accounts;
+using System.ComponentModel.DataAnnotations;
 
 namespace CoU_Server.Models.Items {
 	public class Inventory {

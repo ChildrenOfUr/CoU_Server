@@ -1,4 +1,5 @@
 ﻿using CoU_Server.Models.Entities.StreetEntities;
+using CoU_Server.Models.Streets.MapData;
 using CoU_Server.Util;
 using CoU_Server.Util.Logging;
 using System;
@@ -48,7 +49,17 @@ namespace CoU_Server.Models.Entities {
 				Logger.Error($"Cannot persist entity {ID} ({Type}) because tsid is null on {StreetName}");
 			}
 
-			return new StreetEntity(ID, Type, tsid, X, Y, Z, Rotation, HFlip, GetPersistMetadata());
+			return new StreetEntity{
+				ID = ID, 
+				Type = Type,
+				TSID = tsid,
+				X = X,
+				Y = Y,
+				Z = Z,
+				Rotation = Rotation,
+				HFlip = HFlip,
+				Metadata = GetPersistMetadata()
+			};
 		}
 
 		public abstract void RestoreState(Dictionary<string, string> metadata);

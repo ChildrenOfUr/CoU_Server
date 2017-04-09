@@ -39,7 +39,7 @@ namespace CoU_Server.Models.Entities.StreetEntities {
 		}
 
 		public override string ToString() {
-			return $"<StreetEntity {ID} ({Type}) on {TSID} at ({X}, {Y}, {Z}), flip: {HFlip}, rotation: {Rotation} with metadata {MetadataJSON}>"
+			return $"<StreetEntity {ID} ({Type}) on {TSID} at ({X}, {Y}, {Z}), flip: {HFlip}, rotation: {Rotation} with metadata {MetadataJSON}>";
 		}
 	}
 }
